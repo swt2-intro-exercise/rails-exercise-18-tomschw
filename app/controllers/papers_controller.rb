@@ -18,6 +18,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1/edit
   def edit
+    @paper = Paper.find(params[:id])
   end
 
   # POST /papers
@@ -33,6 +34,10 @@ class PapersController < ApplicationController
 
   # PATCH/PUT /papers/1
   def update
+    @paper = Paper.find(params[:id])
+
+    puts paper_params
+
     if @paper.update(paper_params)
       redirect_to @paper, notice: 'Paper was successfully updated.'
     else
@@ -54,6 +59,6 @@ class PapersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def paper_params
-      params.require(:paper).permit(:title, :venue, :year)
+      params.require(:paper).permit(:title, :venue, :year, :authors, :author_ids)
     end
 end
