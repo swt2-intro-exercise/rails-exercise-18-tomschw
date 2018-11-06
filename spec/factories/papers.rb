@@ -7,7 +7,7 @@ FactoryBot.define do
   end
 
   factory :another_paper, class: Paper do
-    title { "Paper" }
+    title { "OMG It's a Paper" }
     venue { "backstage" }
     year { 1968 }
     authors {build_list :another_author, 1}
