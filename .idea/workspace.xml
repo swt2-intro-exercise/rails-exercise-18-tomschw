@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5ccf557-bc77-495e-91dd-0990798dfcde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/papers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/papers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb" afterDir="false" />
-    </list>
+    <list default="true" id="c5ccf557-bc77-495e-91dd-0990798dfcde" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -41,14 +38,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="40" />
-          <entry key="rb" value="393" />
+          <entry key="rb" value="397" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="RHTML" value="40" />
-          <entry key="Ruby" value="372" />
+          <entry key="Ruby" value="376" />
         </counts>
       </usages-collector>
     </session>
@@ -81,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -178,8 +175,8 @@
         <option value="$PROJECT_DIR$/spec/factories/authors.rb" />
         <option value="$PROJECT_DIR$/spec/features/paper/show_paper_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/papers/_form.html.erb" />
-        <option value="$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/papers_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb" />
       </list>
     </option>
   </component>
@@ -438,12 +435,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541490335999</updated>
-      <workItem from="1541490338946" duration="9949000" />
+      <workItem from="1541490338946" duration="10190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9949000" />
+    <option name="totallyTimeSpent" value="10190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3257" y="-147" width="1764" height="1302" extended-state="0" />
@@ -641,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/paper/edit_paper_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
