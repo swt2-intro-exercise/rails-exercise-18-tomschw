@@ -3,13 +3,18 @@ class AuthorsController < ApplicationController
   def index
     @authors = Author.all
   end
+  def create
+    @author = Author.new(author_params)
 
-  def new
+    if @author.save && !@author.errors.any?
+      redirect_to @author
+    else
+      render "new"
+    end
   end
 
-  def create
-    @author = Author.create(author_params)
-    redirect_to @author
+  def new
+    @author = Author.new
   end
 
   def show

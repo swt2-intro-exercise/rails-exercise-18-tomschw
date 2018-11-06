@@ -1,14 +1,32 @@
-<h1>Author</h1>
+<h1>New Author</h1>
 
-<%= form_tag({controller: "authors", action: "create", method: "post"}) do %>
-  <%= label_tag("first name:\t") %>
-  <%= text_field(:author, :first_name) %>
-  <br />
-  <%= label_tag("last name:\t") %>
-  <%= text_field(:author, :last_name) %>
-  <br />
-  <%= label_tag("homepage:\t") %>
-  <%= text_field(:author, :homepage) %>
-  <br />
-  <%= submit_tag("Submit!") %>
+<%= form_with scope: :author, url: authors_path, local: true do |form| %>
+  <% if @author.errors.any? %>
+    <p><%= pluralize(@author.errors.count, "error") %> occured:
+    <ul>
+      <% @author.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+    </p>
+  <% end %>
+
+  <table>
+    <tr>
+      <td><%= label_tag("first name:\t") %></td>
+      <td><%= form.text_field(:first_name) %></td>
+    </tr>
+    <tr>
+      <td><%= label_tag("last name:\t") %></td>
+      <td><%= form.text_field(:last_name) %></td>
+    </tr>
+    <tr>
+      <td><%= label_tag("homepage:\t") %></td>
+      <td><%= form.text_field(:homepage) %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= form.submit %></td>
+    </tr>
+  </table>
 <% end %>
