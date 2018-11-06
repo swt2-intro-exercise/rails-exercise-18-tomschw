@@ -8,9 +8,11 @@ class AuthorsController < ApplicationController
 
   def create
     @author = Author.create(author_params)
+    redirect_to @author
   end
 
   def show
+    @author = Author.find(params[:id])
   end
 
   private
