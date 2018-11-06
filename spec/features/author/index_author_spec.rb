@@ -19,17 +19,17 @@ require 'rails_helper'
          end
      end
 
-     #it "should have a link to create author" do
-     #    visit authors_path
-     #    expect(page).to have_link(new_author_path)
-     #end
+     it "should have a link to create author" do
+              visit authors_path
+              expect(page).to have_link href: new_author_path
+          end
 
      it "should have a heading for the name column" do
          visit authors_path
          expect(page).to have_css("th", text: "Name")
      end
 
-     it "should link to authors' edit page" do
+    it "should link to every author's edit page" do
               visit authors_path
               @authors.each do |author|
                   expect(page).to have_link href: edit_author_path(author)
