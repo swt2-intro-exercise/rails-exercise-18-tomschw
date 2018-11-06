@@ -13,4 +13,4 @@ describe "Single author page", type: :feature do
     expect(page).to have_text @author.homepage
   end
 
-end 
+end
