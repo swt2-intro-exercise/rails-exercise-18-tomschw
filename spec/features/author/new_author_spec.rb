@@ -2,6 +2,10 @@ require 'rails_helper'
 
 describe "New author page", type: :feature do
 
+  first_name = 'Alan'
+  last_name = 'Turing'
+  homepage = 'http://wikipedia.org/Alan_Turing'
+
   it "should render withour error" do
     visit new_author_path
   end
@@ -18,9 +22,6 @@ describe "New author page", type: :feature do
 
   it "saves an author after submitting" do
     initial_authors = Author.count
-    first_name = 'Alan'
-    last_name = 'Turing'
-    homepage = 'http://wikipedia.org/Alan_Turing'
     visit new_author_path
 
     page.fill_in 'author[first_name]', with: first_name
@@ -31,5 +32,14 @@ describe "New author page", type: :feature do
     expect(Author.count).to be (initial_authors + 1)
 
     expect(Author.exists?(first_name: first_name, last_name: last_name, homepage: homepage)).to be true
-    end
+  end
+
+  it "shows errors that occured" do
+    visit new_author_path
+    page.fill_in 'author[first_name]', with: first_name
+    page.fill_in 'author[homepage]', with: homepage
+    find('input[type="submit"]').click
+
+    expect(page).to have_text("error")
+  end
   end
