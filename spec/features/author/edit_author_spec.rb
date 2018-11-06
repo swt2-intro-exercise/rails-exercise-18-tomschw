@@ -15,7 +15,8 @@ describe "Edit author page", type: :feature do
     page.fill_in 'author[first_name]', with: new_first_name
     find('input[type="submit"]').click
 
-    author.reload
-    expect(@author.first_name).to be new_first_name
+    @author.reload
+    expect(@author.first_name).to eq new_first_name
+  end
 
 end
