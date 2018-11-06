@@ -1,5 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Paper, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Author, type: :model do
+
+  it "should belong to authors" do
+    paper = Paper.new
+    expect(paper.respond_to? :authors).to be true
+  end
+
 end
