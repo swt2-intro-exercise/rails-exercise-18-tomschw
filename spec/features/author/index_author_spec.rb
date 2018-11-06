@@ -36,4 +36,20 @@ require 'rails_helper'
               end
           end
 
+    it "should have a delete link for every author" do
+             visit authors_path
+             @authors.each do |author|
+                 expect(page).to have_css("a[data-method='delete'][href='/authors/#{author.id}']")
+             end
+         end
+
+    it "can delete an author" do
+             author = @authors[1]
+             id = author.id
+             visit authors_path
+             find("a[data-method='delete'][href='/authors/#{author.id}']").click
+
+             expect(Author.exists?(id: id)).to eq false
+         end
+
  end
