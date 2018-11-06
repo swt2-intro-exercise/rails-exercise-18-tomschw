@@ -1,1 +1,7 @@
-<h1>New Author</h1>
+<h1>Authors</h1>
+
+<% @authors.each do |author| %>
+  <%= author.name %>&emsp;<%= link_to "-> homepage", author.homepage %>&emsp;<%= link_to "details", author_path(author) %>
+  <br />
+<% end %>
+<%= link_to "New", new_author_path %>

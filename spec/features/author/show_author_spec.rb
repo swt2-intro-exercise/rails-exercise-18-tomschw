@@ -10,7 +10,7 @@ describe "Single author page", type: :feature do
 
     expect(page).to have_text @author.first_name
     expect(page).to have_text @author.last_name
-    expect(page).to have_text @author.homepage
+    expect(page).to have_link href: @author.homepage
   end
 
 end
