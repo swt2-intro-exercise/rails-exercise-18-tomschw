@@ -23,7 +23,7 @@ require 'rails_helper'
 
      it "should have a heading for the name column" do
          visit authors_path
-         xpect(page).to have_css("th", text: "Name")
+         expect(page).to have_css("th", text: "Name")
      end
 
  end
