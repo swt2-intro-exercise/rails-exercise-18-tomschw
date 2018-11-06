@@ -3,13 +3,11 @@ FactoryBot.define do
     first_name { "Alan" }
     last_name { "Turing" }
     homepage { "http://wikipedia.de/Alan_Turing" }
-    id {1}
   end
 
   factory :another_author, class: Author do
     first_name { "George" }
     last_name { "Orwell" }
     homepage { "http://wikipedia.de/George_Orwell" }
-    id {2}
   end
 end

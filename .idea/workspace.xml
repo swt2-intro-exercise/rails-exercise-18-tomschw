@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5ccf557-bc77-495e-91dd-0990798dfcde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/paper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/paper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/papers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/papers_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -26,53 +26,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="erb" value="7" />
-          <entry key="rb" value="22" />
+          <entry key="erb" value="8" />
+          <entry key="rb" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="7" />
-          <entry key="Ruby" value="20" />
+          <entry key="RHTML" value="8" />
+          <entry key="Ruby" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="36" />
-          <entry key="rb" value="317" />
+          <entry key="rb" value="357" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="RHTML" value="36" />
-          <entry key="Ruby" value="296" />
+          <entry key="Ruby" value="336" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/authors_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/factories/papers.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/views/papers/show.html.erb_spec.rb">
           <provider selected="true" editor-type-id="text-editor" />
@@ -111,13 +92,36 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/paper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/author.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/papers_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/papers/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -138,7 +142,6 @@
       <list>
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/models/author_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/author.rb" />
         <option value="$PROJECT_DIR$/spec/factories/authors.rb" />
         <option value="$PROJECT_DIR$/spec/features/author/show_author_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/authors/show.html.erb" />
@@ -152,6 +155,8 @@
         <option value="$PROJECT_DIR$/spec/features/paper/new_paper_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/paper_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/paper.rb" />
+        <option value="$PROJECT_DIR$/app/models/author.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/papers_controller.rb" />
       </list>
     </option>
   </component>
@@ -397,12 +402,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541490335999</updated>
-      <workItem from="1541490338946" duration="8813000" />
+      <workItem from="1541490338946" duration="9054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8813000" />
+    <option name="totallyTimeSpent" value="9054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3257" y="-147" width="1764" height="1302" extended-state="0" />
@@ -449,13 +454,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/authors_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/author.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/authors.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -572,6 +570,23 @@
           <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/author.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/papers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
