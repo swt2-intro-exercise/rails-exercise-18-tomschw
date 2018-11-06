@@ -1,6 +1,6 @@
 <h1>Author</h1>
 
-<%= form_tag do %>
+<%= form_tag({controller: "authors", action: "create", method: "post"}) do %>
   <%= label_tag("first name:\t") %>
   <%= text_field(:author, :first_name) %>
   <br />

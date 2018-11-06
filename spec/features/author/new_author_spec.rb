@@ -17,14 +17,19 @@ describe "New author page", type: :feature do
   end
 
   it "saves an author after submitting" do
+    initial_authors = Author.count
+    first_name = 'Alan'
+    last_name = 'Turing'
+    homepage = 'http://wikipedia.org/Alan_Turing'
     visit new_author_path
 
-    page.fill_in 'author[first_name]', with: 'Alan'
-    page.fill_in 'author[last_name]', with: 'Turing'
-    page.fill_in 'author[homepage]', with: 'http://wikipedia.org/Alan_Turing'
+    page.fill_in 'author[first_name]', with: first_name
+    page.fill_in 'author[last_name]', with: last_name
+    page.fill_in 'author[homepage]', with: homepage
     find('input[type="submit"]').click
 
-    expect(Author.exists?({first_name: 'Alan', last_name: 'Turing', homepage: 'http://wikipedia.org/Alan_Turing'})).not_to be_false
+    expect(Author.count).to be (initial_authors + 1)
 
+    expect(Author.exists?(first_name: first_name, last_name: last_name, homepage: homepage)).to be true
     end
   end
