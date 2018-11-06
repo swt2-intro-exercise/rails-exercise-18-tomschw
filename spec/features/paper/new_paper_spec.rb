@@ -13,9 +13,9 @@ describe "New paper page", type: :feature do
     papers = Paper.count
     visit new_paper_path
 
-    page.fill_in "paper[title]", title
-    page.fill_in "paper[venue]", venue
-    page.fill_in "paper[year]", year
+    page.fill_in "paper[title]", with: title
+    page.fill_in "paper[venue]", with: venue
+    page.fill_in "paper[year]", with: year
     find('input[type="submit"]').click
 
     expect(Paper.count).to be(papers + 1)
@@ -26,8 +26,8 @@ describe "New paper page", type: :feature do
     papers = Paper.count
     visit new_paper_path
 
-    page.fill_in "paper[venue]", venue
-    page.fill_in "paper[year]", year
+    page.fill_in "paper[venue]", with: venue
+    page.fill_in "paper[year]", with: year
     find('input[type="submit"]').click
 
     expect(Paper.count).to be(papers)
@@ -37,8 +37,8 @@ describe "New paper page", type: :feature do
     papers = Paper.count
     visit new_paper_path
 
-    page.fill_in "paper[title]", title
-    page.fill_in "paper[year]", year
+    page.fill_in "paper[title]", with: title
+    page.fill_in "paper[year]", with: year
     find('input[type="submit"]').click
 
     expect(Paper.count).to be(papers)
@@ -48,8 +48,8 @@ describe "New paper page", type: :feature do
     papers = Paper.count
     visit new_paper_path
 
-    page.fill_in "paper[venue]", venue
-    page.fill_in "paper[title]", title
+    page.fill_in "paper[venue]", with: venue
+    page.fill_in "paper[title]", with: title
     find('input[type="submit"]').click
 
     expect(Paper.count).to be(papers)
@@ -59,12 +59,12 @@ describe "New paper page", type: :feature do
     papers = Paper.count
     visit new_paper_path
 
-    page.fill_in "paper[venue]", venue
-    page.fill_in "paper[title]", title
-    page.fill_in "paper[year]", "year"
+    page.fill_in "paper[venue]", with: venue
+    page.fill_in "paper[title]", with: title
+    page.fill_in "paper[year]", with: "year"
     find('input[type="submit"]').click
 
     expect(Paper.count).to be(papers)
   end
 
-end 
+end
