@@ -1,5 +1,5 @@
 <h1>Edit Author <%=@author.name if !@author.nil? %></h1>
-<%= form_with scope: :author, url: authors_path, local: true do |form| %>
+<%= form_with model: @author, url: author_path, method: "put", local: true do |form| %>
   <% if !@author.nil? && @author.errors.any? %>
     <p><%= pluralize(@author.errors.count, "error") %> occured:
     <ul>
