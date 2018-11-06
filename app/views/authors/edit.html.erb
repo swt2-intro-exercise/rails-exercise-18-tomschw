@@ -1,0 +1,31 @@
+<h1>Edit Author <%=@author.name if !@author.nil? %></h1>
+<%= form_with scope: :author, url: authors_path, local: true do |form| %>
+  <% if !@author.nil? && @author.errors.any? %>
+    <p><%= pluralize(@author.errors.count, "error") %> occured:
+    <ul>
+      <% @author.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+    </p>
+  <% end %>
+
+  <table>
+    <tr>
+      <td><%= label_tag("first name:\t") %></td>
+      <td><%= form.text_field(:first_name) %></td>
+    </tr>
+    <tr>
+      <td><%= label_tag("last name:\t") %></td>
+      <td><%= form.text_field(:last_name) %></td>
+    </tr>
+    <tr>
+      <td><%= label_tag("homepage:\t") %></td>
+      <td><%= form.text_field(:homepage) %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= form.submit %></td>
+    </tr>
+  </table>
+<% end %>
